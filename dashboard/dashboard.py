@@ -3,12 +3,25 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import logging 
+import os
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-payment_reviews_df = pd.read_csv('payment_reviews.csv')
-customer_order_price_df = pd.read_csv('customer_order_price.csv')
-all_df = pd.read_csv("all_data.csv")
+dir1 = os.path.dirname(__file__)
+path1 = os.path.join(dir1, 'payment_reviews.csv')
+dir2 = os.path.dirname(__file__)
+path2 = os.path.join(dir1, 'customer_order_price.csv')
+dir3 = os.path.dirname(__file__)
+path3 = os.path.join(dir1, 'all_data.csv')
+
+# payment_reviews_df = pd.read_csv('payment_reviews.csv')
+# customer_order_price_df = pd.read_csv('customer_order_price.csv')
+# all_df = pd.read_csv("all_data.csv")
+
+payment_reviews_df = pd.read_csv(path1)
+customer_order_price_df = pd.read_csv(path2)
+all_df = pd.read_csv(path3)
+
 logging.debug('csv read complete')
 
 st.set_page_config(layout="wide")
