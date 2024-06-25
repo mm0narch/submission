@@ -1,6 +1,6 @@
 # Simple Data Analysis Project
 
-This project is a simple data analysis project that demonstrates basic data manipulation and visualization using Python. The goal of this project is to analyze a dataset and generate some insightful visualizations.
+This project is a simple data analysis project that demonstrates basic data manipulation and visualization using Python. The goal of this project is to analyze a dataset and generate some insightful visualizations
 
 ## Usage
 
